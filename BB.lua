@@ -7,7 +7,7 @@ local TeamService = game:GetService("Teams")
 
 if game.PlaceVersion > 1317 then
     local Loaded,PromptLib = false,loadstring(game:HttpGet("https://raw.githubusercontent.com/AlexR32/Roblox/main/Useful/PromptLibrary.lua"))()
-    PromptLib("Unsupported game version","You are at risk of getting autoban\nAre you sure you want to load JYT?",{
+    PromptLib("Unsupported game version","You are at risk of getting autoban\nAre you sure you want to load Parvus?",{
         {Text = "Yes",LayoutOrder = 0,Primary = false,Callback = function() Loaded = true end},
         {Text = "No",LayoutOrder = 0,Primary = true,Callback = function() end}
     }) repeat task.wait(1) until Loaded
@@ -30,7 +30,7 @@ local BanCommands = {
 }
 
 local Window = Parvus.Utilities.UI:Window({
-    Name = "JYT | "..Parvus.Game,
+    Name = "🎃 Parvus Hub — "..Parvus.Game,
     Position = UDim2.new(0.05,0,0.5,-248)
     }) do Window:Watermark({Enabled = true})
 
